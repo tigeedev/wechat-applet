@@ -1,0 +1,247 @@
+{
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "晋中开发区质量基础设施服务平台",
+				"navigationBarBackgroundColor": "#029df0",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationStyle": "custom"
+				// "navigationBarTitleText": "",
+				// "navigationBarBackgroundColor": "#4c9ce5",
+				// "enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/user/login",
+			"style": {
+				"navigationStyle": "custom"
+				// "navigationBarTitleText": "",
+				// "enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/user/register",
+			"style": {
+				"navigationStyle": "custom"
+				// "navigationBarTitleText": "",
+				// "enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/forget",
+			"style": {
+				"navigationStyle": "custom"
+				// "navigationBarTitleText": "",
+				// "enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"subPackages": [{
+			"root": "pagesA",
+			"pages": [{
+				"path": "companyInfo/companyInfo",
+				"style": {
+					"navigationBarTitleText": "单位企业信息",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "browseRecord/browseRecord",
+				"style": {
+					"navigationBarTitleText": "浏览记录",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "favoriteData/favoriteData",
+				"style": {
+					"navigationBarTitleText": "收藏数据",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "consultateRecord/consultateRecord",
+				"style": {
+					"navigationBarTitleText": "咨询记录",
+					"enablePullDownRefresh": false
+				}
+			}, {
+				"path": "setUp/setUp",
+				"style": {
+					"navigationBarTitleText": "设置",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "userInfo/userInfo",
+				"style": {
+					"navigationBarTitleText": "个人信息",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "userInfo/modifyNickname",
+				"style": {
+					"navigationBarTitleText": "昵称",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "userInfo/contactAddress",
+				"style": {
+					"navigationBarTitleText": "联系地址",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "addressInfo/addressInfo",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "aboutUs/aboutUs",
+				"style": {
+					"navigationBarTitleText": "关于我们",
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "feedback/feedback",
+				"style": {
+					"navigationBarTitleText": "反馈意见给我们",
+					"enablePullDownRefresh": false
+				}
+
+			}]
+		},
+		{
+			"root": "pagesB",
+			"pages": [{
+					"path": "search/search",
+					"style": {
+						"navigationBarTitleText": "搜索",
+						"enablePullDownRefresh": false
+					}
+				}, {
+					"path": "meteringService/meteringService",
+					"style": {
+						"navigationBarTitleText": "计量服务",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "authentication/authentication",
+					"style": {
+						"navigationBarTitleText": "认证认可",
+						"enablePullDownRefresh": false
+					}
+				}, {
+					"path": "checkout/checkout",
+					"style": {
+						"navigationBarTitleText": "检验检测",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "standardService/standardService",
+					"style": {
+						"navigationBarTitleText": "标准服务",
+						"enablePullDownRefresh": false
+					}
+				}, {
+					"path": "listInstitution/listInstitution",
+					"style": {
+						"navigationBarTitleText": "机构列表",
+						"enablePullDownRefresh": false
+					}
+				}, {
+					"path": "organizationDetails/organizationDetails",
+					"style": {
+						"navigationBarTitleText": "检测对象详情",
+						"enablePullDownRefresh": false
+					}
+
+				},
+				{
+					"path": "customerService/customerService",
+					"style": {
+						"navigationBarTitleText": "客服咨询",
+						"enablePullDownRefresh": false
+					}
+
+				},
+				{
+					"path": "export/export",
+					"style": {
+						"navigationBarTitleText": "专家咨询",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "messageNotification/messageNotification",
+					"style": {
+						"navigationBarTitleText": "消息通知",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "latestAnnouncements/latestAnnouncements",
+					"style": {
+						"navigationBarTitleText": "最新公告",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "newsDetails/newsDetails",
+					"style": {
+						"navigationBarTitleText": "新闻资讯详情",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "processBasis/processBasis",
+					"style": {
+						"navigationBarTitleText": "流程及依据",
+						"enablePullDownRefresh": false
+					}
+
+				}
+			]
+		}
+	],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#4c9ce5",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home_active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"iconPath": "static/tabbar/personal.png",
+				"selectedIconPath": "static/tabbar/personal_active.png",
+				"text": "个人中心"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}

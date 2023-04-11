@@ -1,0 +1,55 @@
+
+*{
+	box-sizing: border-box;
+	font-size: 32rpx;
+}
+
+@mixin flex{
+  display: flex;
+  &.direction-row{
+	  flex-direction: row;
+  }
+  &.col-center{
+    align-items: center;
+  }
+  &.row-center{
+    justify-content: center;
+  }
+  &.between{
+    justify-content: space-between;
+  }
+  &.around{
+    justify-content: space-around;
+  }
+  &.reverse{
+    flex-direction: row-reverse;
+  }
+  &.col{
+    flex-direction: column;
+    &.reverse{
+      flex-direction: column-reverse;
+    }
+  }
+  &.wrap{
+    flex-wrap: wrap;
+  }
+  &.end{
+    justify-content: flex-end;
+  }
+}
+.flex{
+	@include flex
+}
+.flex-row{
+	@include flex;
+	flex-direction:row;
+}
+.normal-card {
+		box-shadow: rgba(100, 100, 111, 0.2) 0rpx 7rpx 29rpx 0rpx;
+		border-radius: 10rpx;
+		background-color: #FFFFFF;
+		padding: 10rpx;
+	}
+	.normal-border{
+		border: solid 1px rgb(214, 215, 217);
+	}
